@@ -1,0 +1,256 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, :after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("../fontsonts/Verdana.eot");
+  src: local("☺"), url("../fontsontsonts/Verdana.woff") format("woff"), url("../fontsontsonts/Verdana.ttf") format("truetype"), url("../fontsontsonts/Verdana.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url("../fontsonts/Verdana-Bold.eot");
+  src: local("☺"), url("../fontsontsonts/Verdana-Bold.woff") format("woff"), url("../fontsontsonts/Verdana-Bold.ttf") format("truetype"), url("../fontsontsonts/Verdana-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.eot");
+  src: local("☺"), url("../fonts/YesevaOne-Regular.woff") format("woff"), url("../fonts/YesevaOne-Regular.ttf") format("truetype"), url("../fonts/YesevaOne-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.eot");
+  src: local("☺"), url("../fonts/Inter-VariableFont_slnt,wght.woff") format("woff"), url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"), url("../fonts/Inter-VariableFont_slnt,wght.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Verdana";
+  font-weight: normal;
+}
+
+[class*=__container] {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.header {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+  padding: 20px 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo-location {
+  position: relative;
+  padding-right: 230px;
+}
+.header__logo {
+  display: inline-block;
+}
+.header__location {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #8E4A4E;
+  margin-left: 30px;
+  padding: 10.5px 20px 10.5px 13px;
+  background: #FFF2F2;
+  border-radius: 36px;
+  letter-spacing: 0.5px;
+  width: 185px;
+}
+.header__location:hover {
+  background: #FFE1E1;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  min-width: 571px;
+}
+.header__menu a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 120%;
+  color: #011936;
+  width: 100%;
+}
+.header__menu li {
+  display: inline-block;
+  width: 185px;
+  text-align: center;
+}
+.header__menu a:hover {
+  color: #43607C;
+}
+.header__menu a:active {
+  font-weight: 700;
+  color: #011936;
+}
+.header__account-box {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__account-box-massege-logo {
+  margin-right: 30px;
+}
+.header__account-box-massege-logo:hover {
+  cursor: pointer;
+}
+.header__account {
+  background: white;
+  display: flex;
+  align-items: center;
+}
+.header__account img {
+  margin-right: 12.5px;
+}
+.header__account span {
+  font-size: 16px;
+  line-height: 120%;
+  color: #43607C;
+}
+.header__pop-up-account {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  padding-top: 8px;
+}
+.header__pop-up-account-delta {
+  position: relative;
+  z-index: 49;
+  width: 20px;
+  height: 20px;
+  transform: rotate(315deg);
+  margin-bottom: -10.5px;
+  margin-left: 13px;
+  border-right: none;
+  border-bottom: none;
+  background: white;
+  border-top-right-radius: 3px;
+  box-shadow: 4px 2px 8px rgba(67, 96, 124, 0.2);
+}
+.header__pop-up-account-delta2 {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  z-index: 51;
+  width: 20px;
+  height: 20px;
+  transform: rotate(315deg);
+  background: white;
+  border-top-right-radius: 3px;
+}
+.header__pop-up-account-main {
+  background: #fff;
+  position: relative;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 50;
+  box-shadow: 4px 2px 8px rgba(67, 96, 124, 0.2);
+}
+.header__pop-up-account-main a {
+  border-radius: 50px;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #43607C;
+  padding: 0 10px;
+}
+.header__pop-up-account-main a:hover {
+  background: #F9F9F9;
+}
+.header__pop-up-account-main a img {
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.header__pop-up-account-main a span {
+  color: #84A6C2;
+}
+.header__pop-up-account-main a:nth-child(2) {
+  margin: 7px 0;
+}

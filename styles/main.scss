@@ -1,0 +1,193 @@
+@import "nullStyle.scss";
+
+@import "fonts.scss";
+
+body {
+	font-family: "Verdana";
+	font-weight: normal;
+}
+
+[class*= "__container"]{
+	max-width: 1472px;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+.header {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+	&__container {
+		padding: 20px 2px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo-location {
+		position: relative;
+		padding-right: 230px;
+	}
+
+	&__logo {
+		display: inline-block;
+	}
+
+	&__location {
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 120%;
+		color: #8E4A4E;
+		margin-left: 30px;
+		padding: 10.5px 20px 10.5px 13px;
+		background: #FFF2F2;
+		border-radius: 36px;
+		letter-spacing: 0.5px;
+		width: 185px;
+	}
+
+	&__location:hover{
+		background: #FFE1E1;
+	}
+
+	// &__location:active{
+	// 	background: #FFE1E1;
+	// }
+	
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		min-width: 571px;
+	}
+
+	&__menu a{
+		display: inline-block;
+		font-size: 18px;
+		line-height: 120%;
+		color: #011936;
+		width: 100%;
+	}
+
+	&__menu li{
+		display: inline-block;
+		width: 185px;
+		text-align: center;
+	}
+
+	&__menu a:hover{
+		color: #43607C;
+	}
+	&__menu a:active{
+		font-weight: 700;
+		color: #011936;
+	}
+
+	&__account-box {
+		flex: 0 0 260px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	&__account-box-massege-logo {
+		margin-right: 30px;
+	}
+
+	&__account-box-massege-logo:hover {
+		cursor: pointer;
+	}
+
+	&__account {
+		background: #ffff;
+		display: flex;
+		align-items: center;
+	}
+	&__account img{
+		margin-right: 12.5px;
+	}
+
+
+	&__account span{
+		font-size: 16px;
+		line-height: 120%;
+		color: #43607C;
+	}
+
+
+	&__pop-up-account {
+		position: absolute;
+		top: 48px;
+		left: 48px;
+		padding-top: 8px;
+	}
+
+	&__pop-up-account-delta {
+		position: relative;
+		z-index: 49;
+		// border: solid;
+		width: 20px;
+		height: 20px;
+		// border-radius: 3px;
+		transform: rotate(315deg);
+		margin-bottom: -10.5px;
+		margin-left: 13px;
+		border-right: none;
+		border-bottom: none;
+		background: white;
+		border-top-right-radius: 3px;
+		box-shadow:4px 2px 8px rgba(67, 96, 124, 0.2);
+	}
+	&__pop-up-account-delta2 {
+		position: absolute;
+		top: 8px;
+		left: 13px;
+		z-index: 51;
+		width: 20px;
+		height: 20px;
+		transform: rotate(315deg);
+		background: white;
+		border-top-right-radius: 3px;
+	}
+
+	&__pop-up-account-main {
+		background: #fff;
+		position: relative;
+		// border: solid;
+		padding: 15px 25px;
+		text-align: center;
+		border-radius: 10px;
+		z-index: 50;
+		box-shadow: 4px 2px 8px rgba(67, 96, 124, 0.2);
+	}
+	
+	&__pop-up-account-main a{
+		// background: #F9F9F9;
+		border-radius: 50px;
+		display: block;
+		font-size: 14px;
+		line-height: 24px;
+		color: #43607C;
+		padding:0 10px;
+	}
+
+	&__pop-up-account-main a:hover{
+		background: #F9F9F9;
+	}
+
+	&__pop-up-account-main a img{
+		margin-top: 6px;
+		margin-left: 10px;
+	}
+
+	&__pop-up-account-main a span{
+		color: #84A6C2;
+	}
+
+	&__pop-up-account-main a:nth-child(2){
+		margin: 7px 0;
+	}
+
+}
+
